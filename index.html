@@ -7,15 +7,17 @@
 
     <title>Instalpay</title>
 
-    <link rel="shortcut icon" href="images/favicon" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 
     <!-- google fonts  -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;600&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
 
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="css/slick.css"/>
 
     <!-- grid css -->
     <link rel="stylesheet" href="css/custom-grid.css">
@@ -23,19 +25,28 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- popup section  -->
-    <section class="popup-sec" id="popup-sec">
-        <div class="cross-btn" id="cross-btn">
-            <i class="fas fa-times"></i>
-        </div>
-        <div class="container">
-            <img src="images/INSTALPAY.png" alt="logo" class="w-100">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos dolorem assumenda molestias architecto labore! Reiciendis, accusantium harum omnis</p>
-            <div class="btn">
-                <a href="#">SignUp Now</a>
+    <!-- popup section start -->
+    <section class="popup-sec-bg" id="popup-sec">
+        <div class="popup-sec">
+            <div class="cross-btn" id="cross-btn">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="container">
+                <img src="images/INSTALPAY.png" alt="logo" class="w-100">
+                <p>Indirizziamo clienti qualificati instalpay verso i vostri siti attraverso campagne di marketing cross-merchant</p>
+                <div class="btn">
+                    <a href="#">SignUp Now</a>
+                </div>
             </div>
         </div>
     </section>
+    <!-- popup section end -->
+
+    <!-- translator section start -->
+    <div class="translator">
+        <div id="google_translate_element"></div>
+    </div>
+    <!-- translator section end -->
 
     <!-- header section start -->
     <header class="header-sec" id="header">
@@ -45,13 +56,13 @@
                     <div class="col-6 col-lg-6 logo">
                         <!-- logo -->
                         <a href="index.html">
-                            <img src="images/INSTALPAY.png" alt="logo">
+                            <img src="images/INSTALPAYf.png" alt="logo">
                         </a>
                     </div>
                     <div class="col-6 col-lg-6">
                         <div class="btn-group justify-end">
                             <div class="btn btn-success">
-                                <a href="#">Sign Up</a>
+                                <a href="signup.html">Sign Up</a>
                             </div>
                             <div class="btn">
                                 <a href="#">Login</a>
@@ -65,219 +76,544 @@
     <!-- header section end -->
 
     <!-- banner section start  -->
-    <section class="banner-sec clearfix">
-        <div class="container">
-            <div class="row align-center">
-                <div class="col-12 col-lg-6">
-                    <div class="banner-caption" data-aos="zoom-in">
-                        <h2>Buy Now, <span>Pay Later</span></h2>
-                        <h3>4 easy payments. 0% Interest. No hidden fee.</h3>
-                        <h5>Check loan eligibility information in QR Code : </h5>
-                        <div class="qr-code">
-                            <img src="images/qr.png" alt="image">
+    <div class="main-slider owl-carousel">
+        <section class="item banner-sec">
+            <div class="container">
+                <div class="row align-center">
+                    <div class="col-12 col-lg-6">
+                        <div class="banner-caption" data-aos="/zoom-in">
+                            <h2>Finanziamenti semplici per servizi che contano</h2>
+                            <h4>instalpay : la rivoluzione</h4>
+                            <h5>Siamo una piattaforma tecnologica che ti consente di offrire ai tuoi clienti prestiti al consumo in tempo reale presso il loro domicilio o negozio</h5>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <div class="banner-img t-center t-lg-left mt-3 mt-0-lg" data-aos="fade-left" data-aos-duration="1500">
-                        <img src="images/banner.png" alt="image">
-                    </div>
+                    <div class="col-12 col-lg-6"></div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <section class="item banner-sec">
+            <div class="container">
+                <div class="row align-center">
+                    <div class="col-12 col-lg-6">
+                        <div class="banner-caption" data-aos="/zoom-in">
+                            <h2>Finanziamenti semplici per servizi che contano</h2>
+                            <h4>instalpay : la rivoluzione</h4>
+                            <h5>Siamo una piattaforma tecnologica che ti consente di offrire ai tuoi clienti prestiti al consumo in tempo reale presso il loro domicilio o negozio</h5>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6"></div>
+                </div>
+            </div>
+        </section>
+    </div>
     <!-- banner section end  -->
 
-    <!-- video section start  -->
-    <section class="video-sec sec-padding">
+    <!-- info section start  -->
+    <section class="info-sec sec-padding">
         <div class="container">
-            <div class="row align-center">
-                <div class="col-12 col-lg-6 w-100">
-                    <div class="video-item">
-                        <iframe width="540" height="304" src="https://www.youtube.com/embed/uIzivMxBwm8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="info-tab t-center py-2">
+                <span href="#" class="tab active" data-toggle-target=".tab-content-1">Marchants</span>
+                <span href="#" class="tab" data-toggle-target=".tab-content-2">Consumers</span>
+                <span href="#" class="tab" data-toggle-target=".tab-content-3">Developers</span>
+            </div>
+            <div class="tab-content tab-content-1 active">
+                <div class="row">
+                    <div class="col-12 col-md-6 order-2 order-md-1">
+                        <h2>It’s never been easier to give your customers options</h2>
+                        <p>We integrate directly with your business software, so that customers can apply within seconds, and you don’t have to worry about handling sensitive information. You get paid upfront and your customers pay over time.</p>
+                    </div>
+                    <div class="col-12 col-md-6 d-flex justify-center order-1 order-md-2">
+                        <img src="images/info/1.svg" alt="icon">
                     </div>
                 </div>
-                <div class="col-12 col-lg-6">
-                    <div class="video-text mt-3 mt-0-lg">
-                        <h3>Easily Setup your Online School Management Software</h3>
-                        <p>Online School Management System simplify and automate daily tasks & operations easily. If you are looking for an out of the box online school software, then feKara is your choice.</p>
+            </div>
+            <div class="tab-content tab-content-2">
+                <div class="row">
+                    <div class="col-12 col-md-6 d-flex justify-center">
+                        <img src="images/info/2.svg" alt="icon">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h2>You power businesses. We empower their customers.</h2>
+                        <p>Consumer-friendly financing makes it easy to afford the services you care about. Now you can invest in what matters most without surprises or unexpected late fees.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content tab-content-3">
+                <div class="row">
+                    <div class="col-12 col-md-6 order-2 order-md-1">
+                        <h2>You power businesses. We empower their customers.</h2>
+                        <p>We’re a technology platform that lets you offer your customers real-time consumer lending at the point of sale. Our simple API lets you integrate a differentiated offering. </p>
+                    </div>
+                    <div class="col-12 col-md-6 d-flex justify-center order-1 order-md-2">
+                        <img src="images/info/3.svg" alt="icon">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- video section end  -->
+    <!-- info section end  -->
 
-    <!-- about section start  -->
+    <!-- work section start  -->
+    <section class="work-sec sec-padding">
+        <div class="container">
+            <div class="title">
+                <h2>How it <span>Work</span></h2>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 d-flex justify-center">
+                    <div class="work-item">
+                        <img src="images/work/1.png" alt="image" class="w-100">
+                        <h3>Perché Instalpay</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, dolore natus distinctio</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 d-flex justify-center">
+                    <div class="work-item">
+                        <img src="images/work/2.png" alt="image" class="w-100">
+                        <h3>Perché Instalpay</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, dolore natus distinctio</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 d-flex justify-center">
+                    <div class="work-item">
+                        <img src="images/work/3.png" alt="image" class="w-100">
+                        <h3>Perché Instalpay</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, dolore natus distinctio</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- work section end -->
+
+    <!-- why section start  -->
     <section class="about-sec sec-padding">
         <div class="container">
             <div class="title">
-                <h2>Why Fe<span>k</span>ara</h2>
+                <h2>Why <span>instalpay</span></h2>
             </div>
-            <div class="row align-center justify-start justify-xl-center">
-                <div class="col-12 col-md-6 col-md-4 col-lg-4 d-md-flex justify-md-end">
-                    <div class="about-list list-ltr" data-aos="fade-up" data-aos-duration="1500">
-                        <ul>
-                            <li>
-                                <span>Easy to Use Mobile App</span>
-                                <span class="list-icon"><i class="fas fa-mobile-alt"></i></span>
-                            </li>
-                            <li>
-                                <span>Student Reports</span>
-                                <span class="list-icon"><i class="fas fa-copy"></i></span>
-                            </li>
-                            <li>
-                                <span>Basic Academic</span>
-                                <span class="list-icon"><i class="fas fa-list-alt"></i></span>
-                            </li>
-                            <li>
-                                <span>Flexible Pricing</span>
-                                <span class="list-icon"><i class="fas fa-dollar-sign"></i></span>
-                            </li>
-                            <li>
-                                <span>Fees & Finances</span>
-                                <span class="list-icon"><i class="fas fa-search-dollar"></i></span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 d-none d-lg-block" data-aos="fade-up" data-aos-duration="500">
+            <div class="row">
+                <div class="col-12 col-lg-6 d-flex justify-center">
                     <div class="about-img">
-                        <img src="images/service.png" alt="image">
+                        <img src="images/why.png" alt="image">
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-md-4 col-lg-4" data-aos="fade-up" data-aos-duration="1500">
-                    <div class="about-list list-rtl">
-                        <ul>
-                            <li>
-                                <span class="list-icon"><i class="fas fa-mobile-alt"></i></span>
-                                <span>Easy to Use Mobile App</span>
-                                
-                            </li>
-                            <li>
-                                <span class="list-icon"><i class="fas fa-copy"></i></span>
-                                <span>Student Reports</span>
-                            </li>
-                            <li>
-                                <span class="list-icon"><i class="fas fa-list-alt"></i></span>
-                                <span>Basic Academic</span>
-                            </li>
-                            <li>
-                                <span class="list-icon"><i class="fas fa-dollar-sign"></i></span>
-                                <span>Flexible Pricing</span>
-                            </li>
-                            <li>
-                               <span class="list-icon"><i class="fas fa-search-dollar"></i></span>
-                                <span>Fees & Finances</span>
-                            </li>
-                        </ul>
+                <div class="col-12 col-lg-6">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="about-list">
+                                <ul>
+                                    <li>
+                                        <span class="icon"><i class="far fa-clock"></i></span>
+                                        <span class="num">1</span>
+                                        <span class="list">esito in 2 minuti</span>
+                                    </li>
+                                    <li>
+                                        <span class="icon"><i class="far fa-thumbs-up"></i></span>
+                                        <span class="num">2</span>
+                                        <span class="list">Trasparenza</span>
+                                    </li>
+                                    <li>
+                                        <span class="icon"><i class="far fa-eye"></i></span>
+                                        <span class="num">3</span>
+                                        <span class="list">Termini chiari</span>
+                                    </li>
+                                    <li>
+                                        <span class="icon"><i class="fas fa-dollar-sign"></i></span>
+                                        <span class="num">4</span>
+                                        <span class="list">nessun costo nascosto</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="about-list">
+                                <ul>
+                                    <li>
+                                        <span class="icon"><i class="fas fa-shopping-basket"></i></span>
+                                        <span class="num">5</span>
+                                        <span class="list">no interessi</span>
+                                    </li>
+                                    <li>
+                                        <span class="icon"><i class="fas fa-money-bill-wave"></i></span>
+                                        <span class="num">6</span>
+                                        <span class="list">no busta paga</span>
+                                    </li>
+                                    <li>
+                                        <span class="icon"><i class="far fa-credit-card"></i></span>
+                                        <span class="num">7</span>
+                                        <span class="list">no linee di credito</span>
+                                    </li>
+                                    <li>
+                                        <span class="icon"><i class="far fa-smile"></i></span>
+                                        <span class="num">8</span>
+                                        <span class="list">Semplicità</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- about section end  -->
+    <!-- why section end  -->
+
+    <!-- category section start -->
+    <section class="category-sec sec-padding clearfix">
+        <div class="container">
+            <div class="title">
+                <h2>Catego<span>rie</span></h2>
+            </div>
+            <div class="row" data-aos="/fade-left" data-aos-duration="1000">
+                <div class="owl-carousel category-slide">
+                    <div class="item">
+                        <div class="category-item">
+                            <div class="category-img">
+                                <img src="images/category/3D-printers-stampanti-3D.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <h3><a href="#">3D printers stampanti 3D</a></h3>
+                                </div>
+                            </div>
+                            <h3><a href="#">3D printers stampanti 3D</a></h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="category-item">
+                            <div class="category-img">
+                                <img src="images/category/adult-toys-giocattoli-per-adulti.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <h3><a href="#">Adult toys giocattoli per adulti</a></h3></div>
+                                </div>
+                            <h3><a href="#">Adult toys giocattoli per adulti</a></h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="category-item">
+                            <div class="category-img">
+                                <img src="images/category/aesthetic-doctors-medici-estetici.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <h3><a href="#">Aesthetic doctors medici estetici</a></h3>
+                                </div>
+                            </div>
+                            <h3><a href="#">Aesthetic doctors medici estetici</a></h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="category-item">
+                            <div class="category-img">
+                                <img src="images/category/antenna-playr-antennista.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <h3><a href="#">Antenna playr antennista</a></h3>
+                                </div>
+                            </div>
+                            <h3><a href="#">Antenna playr antennista</a></h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="category-item">
+                            <div class="category-img">
+                                <img src="images/category/auto-glass-repair-riparazione-vetri-auto.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <h3><a href="#">Auto glass repair riparazione vetri auto</a></h3>
+                                </div>
+                            </div>
+                            <h3><a href="#">Auto glass repair riparazione vetri auto</a></h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="category-item">
+                            <div class="category-img">
+                                <img src="images/category/cell-phones-&-tablets-cellulari-e-tablets.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <h3><a href="#">Cell phones & tablets cellulari e tablets</a></h3>
+                                </div>
+                            </div>
+                            <h3><a href="#">Cell phones & tablets cellulari e tablets</a></h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="category-item">
+                            <div class="category-img">
+                                <img src="images/category/coachbuilder-carrozziere.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <h3><a href="#">Coachbuilder carrozziere</a></h3>
+                                </div>
+                            </div>
+                            <h3><a href="#">Coachbuilder carrozziere</a></h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="category-item">
+                            <div class="category-img">
+                                <img src="images/category/drones-droni.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <h3><a href="#">Drones droni</a></h3>
+                                </div>
+                            </div>
+                            <h3><a href="#">Drones droni</a></h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="category-item">
+                            <div class="category-img">
+                                <img src="images/category/flowers-&-bonsai-fiori-&-bonsai.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <h3><a href="#">Flowers & bonsai fiori & bonsai</a></h3>
+                                </div>
+                            </div>
+                            <h3><a href="#">Flowers & bonsai fiori & bonsai</a></h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="category-item">
+                            <div class="category-img">
+                                <img src="images/category/gardener-giardiniere.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <h3><a href="#">Gardener giardiniere</a></h3>
+                                </div>
+                            </div>
+                            <h3><a href="#">Gardener giardiniere</a></h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="category-item">
+                            <div class="category-img">
+                                <img src="images/category/gommista-tire-specialist.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <h3><a href="#">Gommista tire specialist</a></h3>
+                                </div>
+                            </div>
+                            <h3><a href="#">Gommista tire specialist</a></h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="category-item">
+                            <div class="category-img">
+                                <img src="images/category/nautical-accessories-accessori-nautici.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <h3><a href="#">Nautical accessories accessori nautici</a></h3>
+                                </div>
+                            </div>
+                            <h3><a href="#">Nautical accessories accessori nautici</a></h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="category-item">
+                            <div class="category-img">
+                                <img src="images/category/photographers-fotografi.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <h3><a href="#">Photographers fotografi</a></h3>
+                                </div>
+                            </div>
+                            <h3><a href="#">Photographers fotografi</a></h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="category-item">
+                            <div class="category-img">
+                                <img src="images/category/plumber-idraulico.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <h3><a href="#">Plumber idraulico</a></h3>
+                                </div>
+                            </div>
+                            <h3><a href="#">Plumber idraulico</a></h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="category-item">
+                            <div class="category-img">
+                                <img src="images/category//removals-traslochi.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <h3><a href="#">Removals traslochi</a></h3>
+                                </div>
+                            </div>
+                            <h3><a href="#">Removals traslochi</a></h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="category-item">
+                            <div class="category-img">
+                                <img src="images/category/skiing-&-snow-si-&-neve.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <h3><a href="#">Skiing & snow si & neve</a></h3>
+                                </div>
+                            </div>
+                            <h3><a href="#">Skiing & snow si & neve</a></h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="category-item">
+                            <div class="category-img">
+                                <img src="images/category/speakers-&-amplifiers-diffusori-&-amplificatori.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <h3><a href="#">Speakers & amplifiers diffusori & amplificatori</a></h3>
+                                </div>
+                            </div>
+                            <h3><a href="#">Speakers & amplifiers diffusori & amplificatori</a></h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="category-item">
+                            <div class="category-img">
+                                <img src="images/category/sports-&-camping-sport-&-campeggio.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <h3><a href="#">Sports & camping sport & campeggio</a></h3>
+                                </div>
+                            </div>
+                            <h3><a href="#">Sports & camping sport & campeggio</a></h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="category-item">
+                            <div class="category-img">
+                                <img src="images/category/tattoo-removal-rimozione-tatuaggi.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <h3><a href="#">Tattoo removal rimozione tatuaggi</a></h3>
+                                </div>
+                            </div>
+                            <h3><a href="#">Tattoo removal rimozione tatuaggi</a></h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="category-item">
+                            <div class="category-img">
+                                <img src="images/category/upholsterers-tappezzieri.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <h3><a href="#">Upholsterers tappezzieri</a></h3>
+                                </div>
+                            </div>
+                            <h3><a href="#">Upholsterers tappezzieri</a></h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="category-item">
+                            <div class="category-img">
+                                <img src="images/category/wedding-matrimoni.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <h3><a href="#">Wedding matrimoni</a></h3>
+                                </div>
+                            </div>
+                            <h3><a href="#">Wedding matrimoni</a></h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="category-item">
+                            <div class="category-img">
+                                <img src="images/category/wigs-&-extensions-parrucche-&-extensions.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <h3><a href="#">Wigs & extensions parrucche & extensions</a></h3>
+                                </div>
+                            </div>
+                            <h3><a href="#">Wigs & extensions parrucche & extensions</a></h3>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </section>
+    <!-- category section end -->
 
     <!-- ecommerce section start -->
     <section class="ecommerce-sec sec-padding">
         <div class="container">
-            <div class="title">
-                <h2><span>Ecommerce</span> Platform</h2>
+            <div class="title">   
+                <h2><span>Piattaforma</span> di e-commerce</h2>
             </div>
-            <div class="row" data-aos="fade-right" data-aos-duration="1000">
-                <div class="col-6 col-sm-4 col-md-3">
+            <div class="owl-carousel ecommerce-slide" data-aos="/fade-right" data-aos-duration="1000">
+                <div class="item">
                     <div class="ecommerce-item">
                         <a href="#">
-                            <i class="fab fa-amazon"></i>
+                            <img src="images/ecommerce/amazon.png" alt="logo">
                             <h3>Amazon</h3>
                         </a>
                     </div>
                 </div>
-                <div class="col-6 col-sm-4 col-md-3">
+                <div class="item">
                     <div class="ecommerce-item">
                         <a href="#">
-                            <i class="fab fa-amazon"></i>
-                            <h3>Amazon</h3>
+                            <img src="images/ecommerce/etsy.png" alt="logo">
+                            <h3>Etsy</h3>
                         </a>
                     </div>
                 </div>
-                <div class="col-6 col-sm-4 col-md-3">
+                <div class="item">
                     <div class="ecommerce-item">
                         <a href="#">
-                            <i class="fab fa-amazon"></i>
-                            <h3>Amazon</h3>
+                            <img src="images/ecommerce/dpop.png" alt="logo">
+                            <h3>Depop</h3>
                         </a>
                     </div>
                 </div>
-                <div class="col-6 col-sm-4 col-md-3">
+                <div class="item">
                     <div class="ecommerce-item">
                         <a href="#">
-                            <i class="fab fa-amazon"></i>
-                            <h3>Amazon</h3>
+                            <img src="images/ecommerce/zalando.png" alt="logo">
+                            <h3>Zalando</h3>
                         </a>
                     </div>
                 </div>
-                <div class="col-6 col-sm-4 col-md-3">
+                <div class="item">
                     <div class="ecommerce-item">
                         <a href="#">
-                            <i class="fab fa-amazon"></i>
-                            <h3>Amazon</h3>
+                            <img src="images/ecommerce/farfetch.png" alt="logo">
+                            <h3>Farfetch</h3>
                         </a>
                     </div>
                 </div>
-                <div class="col-6 col-sm-4 col-md-3">
+                <div class="item">
                     <div class="ecommerce-item">
                         <a href="#">
-                            <i class="fab fa-amazon"></i>
-                            <h3>Amazon</h3>
+                            <img src="images/ecommerce/harrods.png" alt="logo">
+                            <h3>Harrods</h3>
                         </a>
                     </div>
                 </div>
-                <div class="col-6 col-sm-4 col-md-3">
+                <div class="item">
                     <div class="ecommerce-item">
                         <a href="#">
-                            <i class="fab fa-amazon"></i>
-                            <h3>Amazon</h3>
+                            <img src="images/ecommerce/manomano.png" alt="logo">
+                            <h3>Manomano</h3>
                         </a>
                     </div>
                 </div>
-                <div class="col-6 col-sm-4 col-md-3">
+                <div class="item">
                     <div class="ecommerce-item">
                         <a href="#">
-                            <i class="fab fa-amazon"></i>
-                            <h3>Amazon</h3>
+                            <img src="images/ecommerce/luisaviaroma.png" alt="logo">
+                            <h3>Luisaviaroma</h3>
                         </a>
                     </div>
                 </div>
-                <div class="col-6 col-sm-4 col-md-3">
+                <div class="item">
                     <div class="ecommerce-item">
                         <a href="#">
-                            <i class="fab fa-amazon"></i>
-                            <h3>Amazon</h3>
+                            <img src="images/ecommerce/mallporium.png" alt="logo">
+                            <h3>Mallporium</h3>
                         </a>
                     </div>
                 </div>
-                <div class="col-6 col-sm-4 col-md-3">
+                <div class="item">
                     <div class="ecommerce-item">
                         <a href="#">
-                            <i class="fab fa-amazon"></i>
-                            <h3>Amazon</h3>
+                            <img src="images/ecommerce/asos.png" alt="logo">
+                            <h3>Asos</h3>
                         </a>
                     </div>
                 </div>
-                <div class="col-6 col-sm-4 col-md-3">
+                <div class="item">
                     <div class="ecommerce-item">
                         <a href="#">
-                            <i class="fab fa-amazon"></i>
-                            <h3>Amazon</h3>
+                            <img src="images/ecommerce/forzieri.png" alt="logo">
+                            <h3>Forzieri</h3>
                         </a>
                     </div>
                 </div>
-                <div class="col-6 col-sm-4 col-md-3">
+                <div class="item">
                     <div class="ecommerce-item">
                         <a href="#">
-                            <i class="fab fa-amazon"></i>
-                            <h3>Amazon</h3>
+                            <img src="images/ecommerce/aboutyou.png" alt="logo">
+                            <h3>Aboutyou</h3>
                         </a>
                     </div>
                 </div>
@@ -286,179 +622,508 @@
     </section>
     <!-- ecommerce section end -->
 
-    <!-- category section start -->
-    <section class="category-sec sec-padding clearfix">
+    <!-- physicalshop section start -->
+    <section class="physical-shop-sec sec-padding clearfix">
         <div class="container">
-            <div class="title">
-                <h2>Catego<span>ries</span></h2>
+            <div class="title"> 
+                <h2>Negozio <span>fisico</span></h2>
             </div>
-            <div class="row" data-aos="fade-left" data-aos-duration="1000">
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div class="category-item">
-                        <div class="category-img">
-                            <img src="images/category/1.jpg" alt="image" class="w-100">
+            <div class="row" data-aos="/fade-left" data-aos-duration="1000">
+                <div class="owl-carousel shop-slider">
+                    <div class="item">
+                        <div class="shop-item">
+                            <h3><a href="#">Accessories accessori</a></h3>
+                            <div class="shop-img">
+                                <img src="images/physical-shop/accessories accessori.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <a href="#"><i class="fas fa-store-alt"></i></a></i>
+                                </div>
+                            </div>
                         </div>
-                        <h3><a href="#">Music</a></h3>
+                    </div>
+                    <div class="item">
+                        <div class="shop-item">
+                            <h3><a href="#">Auto parts parti auto</a></h3>
+                            <div class="shop-img">
+                                <img src="images/physical-shop/auto parts parti auto.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <a href="#"><i class="fas fa-store-alt"></i></a></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="shop-item">
+                            <h3><a href="#">Bags & suitcases borse & valigie</a></h3>
+                            <div class="shop-img">
+                                <img src="images/physical-shop/bags & suitcases borse & valigie.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <a href="#"><i class="fas fa-store-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="shop-item">
+                            <h3><a href="#">Carpets negozio tappeti</a></h3>
+                            <div class="shop-img">
+                                <img src="images/physical-shop/carpets negozio tappeti.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <a href="#"><i class="fas fa-store-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="shop-item">
+                            <h3><a href="#">Chandaliers lampadari</a></h3>
+                            <div class="shop-img">
+                                <img src="images/physical-shop/chandaliers lampadari.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <a href="#"><i class="fas fa-store-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="shop-item">
+                            <h3><a href="#">Clothing negozi abbigliamento</a></h3>
+                            <div class="shop-img">
+                                <img src="images/physical-shop/clothing negozi abbigliamento.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <a href="#"><i class="fas fa-store-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="shop-item">
+                            <h3><a href="#">Courtains tende interno ed esterno</a></h3>
+                            <div class="shop-img">
+                                <img src="images/physical-shop/courtains tende interno ed esterno.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <a href="#"><i class="fas fa-store-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="shop-item">
+                            <h3><a href="#">DIY & gardening fai da te & giardinaggio</a></h3>
+                            <div class="shop-img">
+                                <img src="images/physical-shop/DIY & gardening fai da te & giardinaggio.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <a href="#"><i class="fas fa-store-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="shop-item">
+                            <h3><a href="#">Doors & windows porte e finestre</a></h3>
+                            <div class="shop-img">
+                                <img src="images/physical-shop/doors & windows porte e finestre.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <a href="#"><i class="fas fa-store-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="shop-item">
+                            <h3><a href="#">Eyewear negozio occhiali</a></h3>
+                            <div class="shop-img">
+                                <img src="images/physical-shop/eyewear negozio occhiali.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <a href="#"><i class="fas fa-store-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="shop-item">
+                            <h3><a href="#">Fishes & aquariums pesci e acquari</a></h3>
+                            <div class="shop-img">
+                                <img src="images/physical-shop/fishes & aquariums pesci e acquari.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <a href="#"><i class="fas fa-store-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="shop-item">
+                            <h3><a href="#">Foto vino x mallporium</a></h3>
+                            <div class="shop-img">
+                                <img src="images/physical-shop/foto vino x mallporium.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <a href="#"><i class="fas fa-store-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="shop-item">
+                            <h3><a href="#">Furnitures arredamento</a></h3>
+                            <div class="shop-img">
+                                <img src="images/physical-shop/furnitures arredamento.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <a href="#"><i class="fas fa-store-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="shop-item">
+                            <h3><a href="#">Gadgets & gifts gadgets & regali</a></h3>
+                            <div class="shop-img">
+                                <img src="images/physical-shop/gadgets & gifts gadgets & regali.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <a href="#"><i class="fas fa-store-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="shop-item">
+                            <h3><a href="#">Jewelery store gioellerie</a></h3>
+                            <div class="shop-img">
+                                <img src="images/physical-shop/jewelery store gioellerie.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <a href="#"><i class="fas fa-store-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="shop-item">
+                            <h3><a href="#">Lingerie lingerie</a></h3>
+                            <div class="shop-img">
+                                <img src="images/physical-shop/lingerie lingerie.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <a href="#"><i class="fas fa-store-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="shop-item">
+                            <h3><a href="#">Matresses materassi</a></h3>
+                            <div class="shop-img">
+                                <img src="images/physical-shop/matresses materassi.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <a href="#"><i class="fas fa-store-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="shop-item">
+                            <h3><a href="#">Musical instruments strumenti musiacali</a></h3>
+                            <div class="shop-img">
+                                <img src="images/physical-shop/musical instruments strumenti musiacali.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <a href="#"><i class="fas fa-store-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="shop-item">
+                            <h3><a href="#">Paintings & lithigraphies quadri & litografie</a></h3>
+                            <div class="shop-img">
+                                <img src="images/physical-shop/paintings & lithigraphies quadri & litografie.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <a href="#"><i class="fas fa-store-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="shop-item">
+                            <h3><a href="#">Perfumeries profumerie</a></h3>
+                            <div class="shop-img">
+                                <img src="images/physical-shop/perfumeries profumerie.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <a href="#"><i class="fas fa-store-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="shop-item">
+                            <h3><a href="#">Pets & accesories pets & accessori</a></h3>
+                            <div class="shop-img">
+                                <img src="images/physical-shop/pets & accesories pets & accessori.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <a href="#"><i class="fas fa-store-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="shop-item">
+                            <h3><a href="#">Shoes scarpe</a></h3>
+                            <div class="shop-img">
+                                <img src="images/physical-shop/shoes scarpe.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <a href="#"><i class="fas fa-store-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="shop-item">
+                            <h3><a href="#">Toys giocattoli</a></h3>
+                            <div class="shop-img">
+                                <img src="images/physical-shop/toys giocattoli.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <a href="#"><i class="fas fa-store-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div class="category-item">
-                        <div class="category-img">
-                            <img src="images/category/2.jpg" alt="image" class="w-100">
+
+            <div class="shop-page-link">
+                <a href="shop.html">Mostra più negozi in Bellezza <span><i class='fas fa-arrow-right'></i></span></a>
+            </div>
+        </div>
+    </section>
+    <!-- physicalshop section end -->
+
+    <!-- services section start -->
+    <section class="services category-sec sec-padding clearfix">
+        <div class="container">
+            <div class="title"> 
+                <h2>Ser<span>vizi</span></h2>
+            </div>
+            <div class="row" data-aos="/fade-right" data-aos-duration="1000">
+                <div class="owl-carousel category-slide">
+                    <div class="item">
+                        <div class="category-item">
+                            <div class="category-img">
+                                <img src="images/services/beauty-salon-centro-estetico.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <h3><a href="#">Beauty salon centro estetico</a></h3>
+                                </div>
+                            </div>
+                            <h3><a href="#">Beauty salon centro estetico</a></h3>
                         </div>
-                        <h3><a href="#">Gadget</a></h3>
                     </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div class="category-item">
-                        <div class="category-img">
-                            <img src="images/category/3.jpg" alt="image" class="w-100">
+                    <div class="item">
+                        <div class="category-item">
+                            <div class="category-img">
+                                <img src="images/services/blackmiths-fabbro.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <h3><a href="#">Blackmiths fabbro</a></h3></div>
+                                </div>
+                            <h3><a href="#">Blackmiths fabbro</a></h3>
                         </div>
-                        <h3><a href="#">Camera</a></h3>
                     </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div class="category-item">
-                        <div class="category-img">
-                            <img src="images/category/4.jpg" alt="image" class="w-100">
+                    <div class="item">
+                        <div class="category-item">
+                            <div class="category-img">
+                                <img src="images/services/burglar-alarm-installer-installatori-allarmi.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <h3><a href="#">Burglar alarm installer installatori allarmi</a></h3>
+                                </div>
+                            </div>
+                            <h3><a href="#">Burglar alarm installer installatori allarmi</a></h3>
                         </div>
-                        <h3><a href="#">Smartphone</a></h3>
                     </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div class="category-item">
-                        <div class="category-img">
-                            <img src="images/category/5.jpg" alt="image" class="w-100">
+                    <div class="item">
+                        <div class="category-item">
+                            <div class="category-img">
+                                <img src="images/services/bycicle-foto.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <h3><a href="#">Bycicle foto</a></h3>
+                                </div>
+                            </div>
+                            <h3><a href="#">Bycicle foto</a></h3>
                         </div>
-                        <h3><a href="#">Computer</a></h3>
                     </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div class="category-item">
-                        <div class="category-img">
-                            <img src="images/category/1.jpg" alt="image" class="w-100">
+                    <div class="item">
+                        <div class="category-item">
+                            <div class="category-img">
+                                <img src="images/services/carpenter-falegnami.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <h3><a href="#">Carpenter falegnami</a></h3>
+                                </div>
+                            </div>
+                            <h3><a href="#">Carpenter falegnami</a></h3>
                         </div>
-                        <h3><a href="#">Music</a></h3>
                     </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div class="category-item">
-                        <div class="category-img">
-                            <img src="images/category/2.jpg" alt="image" class="w-100">
+                    <div class="item">
+                        <div class="category-item">
+                            <div class="category-img">
+                                <img src="images/services/dentist-dentista.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <h3><a href="#">Dentist dentista</a></h3>
+                                </div>
+                            </div>
+                            <h3><a href="#">Dentist dentista</a></h3>
                         </div>
-                        <h3><a href="#">Gadget</a></h3>
                     </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div class="category-item">
-                        <div class="category-img">
-                            <img src="images/category/3.jpg" alt="image" class="w-100">
+                    <div class="item">
+                        <div class="category-item">
+                            <div class="category-img">
+                                <img src="images/services/doors-&-windows-porte-e-finestre.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <h3><a href="#">Doors & windows porte e finestre</a></h3>
+                                </div>
+                            </div>
+                            <h3><a href="#">Doors & windows porte e finestre</a></h3>
                         </div>
-                        <h3><a href="#">Camera</a></h3>
                     </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div class="category-item">
-                        <div class="category-img">
-                            <img src="images/category/4.jpg" alt="image" class="w-100">
+                    <div class="item">
+                        <div class="category-item">
+                            <div class="category-img">
+                                <img src="images/services/doors-&-windows-porte-e-finestre-2.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <h3><a href="#">Doors & windows porte e finestre 2</a></h3>
+                                </div>
+                            </div>
+                            <h3><a href="#">Doors & windows porte e finestre 2</a></h3>
                         </div>
-                        <h3><a href="#">Smartphone</a></h3>
                     </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div class="category-item">
-                        <div class="category-img">
-                            <img src="images/category/5.jpg" alt="image" class="w-100">
+                    <div class="item">
+                        <div class="category-item">
+                            <div class="category-img">
+                                <img src="images/services/electrician elettricista.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <h3><a href="#">Electrician elettricista</a></h3>
+                                </div>
+                            </div>
+                            <h3><a href="#">Electrician elettricista</a></h3>
                         </div>
-                        <h3><a href="#">Computer</a></h3>
                     </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div class="category-item">
-                        <div class="category-img">
-                            <img src="images/category/1.jpg" alt="image" class="w-100">
+                    <div class="item">
+                        <div class="category-item">
+                            <div class="category-img">
+                                <img src="images/services/fishes & aquariums pesci e acquari.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <h3><a href="#">Fishes & aquariums pesci e acquari</a></h3>
+                                </div>
+                            </div>
+                            <h3><a href="#">Fishes & aquariums pesci e acquari</a></h3>
                         </div>
-                        <h3><a href="#">Music</a></h3>
                     </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div class="category-item">
-                        <div class="category-img">
-                            <img src="images/category/2.jpg" alt="image" class="w-100">
+                    <div class="item">
+                        <div class="category-item">
+                            <div class="category-img">
+                                <img src="images/services/foto vino x mallporium.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <h3><a href="#">Foto vino x mallporium</a></h3>
+                                </div>
+                            </div>
+                            <h3><a href="#">Foto vino x mallporium</a></h3>
                         </div>
-                        <h3><a href="#">Gadget</a></h3>
                     </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div class="category-item">
-                        <div class="category-img">
-                            <img src="images/category/3.jpg" alt="image" class="w-100">
+                    <div class="item">
+                        <div class="category-item">
+                            <div class="category-img">
+                                <img src="images/services/furniture restorer restauratore mobili.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <h3><a href="#">Furniture restorer restauratore mobili</a></h3>
+                                </div>
+                            </div>
+                            <h3><a href="#">Furniture restorer restauratore mobili</a></h3>
                         </div>
-                        <h3><a href="#">Camera</a></h3>
                     </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div class="category-item">
-                        <div class="category-img">
-                            <img src="images/category/4.jpg" alt="image" class="w-100">
+                    <div class="item">
+                        <div class="category-item">
+                            <div class="category-img">
+                                <img src="images/services/house painters imbianchini.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <h3><a href="#">House painters imbianchini</a></h3>
+                                </div>
+                            </div>
+                            <h3><a href="#">House painters imbianchini</a></h3>
                         </div>
-                        <h3><a href="#">Smartphone</a></h3>
                     </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div class="category-item">
-                        <div class="category-img">
-                            <img src="images/category/5.jpg" alt="image" class="w-100">
+                    <div class="item">
+                        <div class="category-item">
+                            <div class="category-img">
+                                <img src="images/services/luxury car rental noleggio auto lusso.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <h3><a href="#">Luxury car rental noleggio auto lusso</a></h3>
+                                </div>
+                            </div>
+                            <h3><a href="#">Luxury car rental noleggio auto lusso</a></h3>
                         </div>
-                        <h3><a href="#">Computer</a></h3>
                     </div>
-                </div><div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div class="category-item">
-                        <div class="category-img">
-                            <img src="images/category/1.jpg" alt="image" class="w-100">
+                    <div class="item">
+                        <div class="category-item">
+                            <div class="category-img">
+                                <img src="images/services/physiotherapist fisioterapisti.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <h3><a href="#">Physiotherapist fisioterapisti</a></h3>
+                                </div>
+                            </div>
+                            <h3><a href="#">Physiotherapist fisioterapisti</a></h3>
                         </div>
-                        <h3><a href="#">Music</a></h3>
                     </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div class="category-item">
-                        <div class="category-img">
-                            <img src="images/category/2.jpg" alt="image" class="w-100">
+                    <div class="item">
+                        <div class="category-item">
+                            <div class="category-img">
+                                <img src="images/services/small home renovation piccole ristrutturazioni.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <h3><a href="#">Small home renovation piccole ristrutturazioni</a></h3>
+                                </div>
+                            </div>
+                            <h3><a href="#">Small home renovation piccole ristrutturazioni</a></h3>
                         </div>
-                        <h3><a href="#">Gadget</a></h3>
                     </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div class="category-item">
-                        <div class="category-img">
-                            <img src="images/category/3.jpg" alt="image" class="w-100">
+                    <div class="item">
+                        <div class="category-item">
+                            <div class="category-img">
+                                <img src="images/services/tattoo artist tatuatori.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <h3><a href="#">Tattoo artist tatuatori</a></h3>
+                                </div>
+                            </div>
+                            <h3><a href="#">Tattoo artist tatuatori</a></h3>
                         </div>
-                        <h3><a href="#">Camera</a></h3>
                     </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div class="category-item">
-                        <div class="category-img">
-                            <img src="images/category/4.jpg" alt="image" class="w-100">
+                    <div class="item">
+                        <div class="category-item">
+                            <div class="category-img">
+                                <img src="images/services/tilers piastrellisti.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <h3><a href="#">Tilers piastrellisti</a></h3>
+                                </div>
+                            </div>
+                            <h3><a href="#">Tilers piastrellisti</a></h3>
                         </div>
-                        <h3><a href="#">Smartphone</a></h3>
+                    </div>
+                    <div class="item">
+                        <div class="category-item">
+                            <div class="category-img">
+                                <img src="images/services/veterinarians veterinari.jpg" alt="image" class="w-100">
+                                <div class="text-overlay">
+                                    <h3><a href="#">Veterinarians veterinari</a></h3>
+                                </div>
+                            </div>
+                            <h3><a href="#">Veterinarians veterinari</a></h3>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- category section end -->
+    <!-- services section end -->
 
     <!-- review section end  -->
     <div class="review-sec sec-padding">
         <div class="container">
-            <div class="title">
-                <h2>What <span>Client</span> Say</h2>
+            <div class="title">    
+                <h2>Cosa dice il <span>cliente</span></h2>
             </div>
             <div class="slider-wrapper" data-aos="zoom-in" data-aos-duration="1000">
                 <div class="slide fade">
                     <div class="review-item">
-                        <blockquote>We have been using Fekara for last 3 years. Things at Fekara have improved alot in last years. Handling School daily routines has become a matter of few clicks with fekara. We are pretty satisfied with i</blockquote>
+                        <blockquote>We have been using Instalpay for last 3 years. Things at Instalpay have improved alot in last years. Handling School daily routines has become a matter of few clicks with Instalpay. We are pretty satisfied with i</blockquote>
                         <div class="autor">
                             <h5>capterra.com</h5>
                             <span>Pakistan</span>
@@ -468,7 +1133,7 @@
                 <div class="slide fade">
                     <div class="review-item">
                         <blockquote>
-                            Using Fekara for managaging School’s matters like, Attendance, Examination Reports etc is a tremendous experience. Wonderful SMS tool for keeping in touch with parents.</blockquote>
+                            Using Instalpay for managaging School’s matters like, Attendance, Examination Reports etc is a tremendous experience. Wonderful SMS tool for keeping in touch with parents.</blockquote>
                         <div class="autor">
                             <h5>Decent Commerce and Science Academy</h5>
                             <span>United States</span>
@@ -503,10 +1168,10 @@
                     <div class="page-link">
                         <h5 class="footer-title">Pages</h5>
                         <ul>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">F A Q</a></li>
-                            <li><a href="#">Demo</a></li>
-                            <li><a href="#">Change Log</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="signup.html">Signup</a></li>
+                            <li><a href="shop.html">Shop</a></li>
                             <li><a href="#">Privacy Policy</a></li>
                             <li><a href="#">Terms of Service</a></li>
                         </ul>
@@ -514,7 +1179,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-3 mb-3 mb-0-lg">
                     <div class="page-link">
-                        <h5 class="footer-title">About Us</h5>
+                        <h5 class="footer-title">Chi siamo</h5>
                         <ul>
                             <li><a href="#">Help</a></li>
                             <li><a href="#">Login</a></li>
@@ -526,14 +1191,19 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-3 mt-3-md mb-3 mb-0-lg mt-0-xl">
                     <div class="footer-about">
-                        <img src="images/INSTALPAY.png" alt="logo" class="w-100">
-                        <p>InstalPay is management software for schools. It helps in learning, testing and administration activities.</p>
+                        <img src="images/INSTALPAYf.png" alt="logo" class="w-100">
+                        <p>Instalpay fornisce prestiti per servizi quali idraulici , elettricisti , imbianchini , gommisti , traslochi  o prestiti online e in negozio in modo che gli acquirenti possono <a href="about.html">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-xl-3 mt-3-md mb-3 mb-0-lg mt-0-xl">
                     <div class="contact-info">
                         <h5 class="footer-title">Contact Info</h5>
                         <ul class="contact">
+							<li>
+								<span><i class="fas fa-map-marker-alt"></i></span>
+								<span>Address </span>
+								<span class="address">instalpay 41 Devonshire Street, Ground Floor, London, England, W1G 7AJ</span>
+							</li>
                             <li>
                                 <span><i class="fas fa-phone"></i></span>
                                 <span>Phone </span>
@@ -553,11 +1223,17 @@
 
                         <ul class="social">
                             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                             <li><a href="#"><i class="fab fa-youtube"></i></a></li>
                             <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
                         </ul>
                     </div>
                 </div>
+            </div>
+			<div class="copyright-text">
+                <p>
+                    &copy; 2021 <a href="index.html">instalpay LTD</a> All Rights Reserved
+                </p>
             </div>
         </div>
     </footer>
@@ -565,6 +1241,10 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="js/custom.js"></script>
+
 </body>
 </html>

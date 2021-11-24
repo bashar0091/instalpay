@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  //section animate
   AOS.init({
     once: false
   });
@@ -7,6 +8,132 @@ $(document).ready(function(){
   $("#cross-btn").click(function(){
     $("#popup-sec").css('display','none');
   });
+
+  //sticky header
+  $(window).scroll(function(){
+      var scroll = $(window).scrollTop();
+      if(scroll > 300) {
+          $("#header").addClass("sticky");
+      }else {
+          $("#header").removeClass("sticky");
+      }
+  });
+
+  // main slider 
+  $('.main-slider').owlCarousel({
+      items: 1,
+      autoplay: true,
+      autoplayTimeout: 6000,
+      loop: true,
+      dots: true,
+  });
+
+  // category slider 
+  $('.category-slide').owlCarousel({
+      autoplay: true,
+      loop: true,
+      dots: false,
+      autoplayTimeout: 4000,
+      nav: true,  
+      navText: ["<i class='fas fa-arrow-left'></i>","<i class='fas fa-arrow-right'></i>"],
+      responsiveClass:true,
+      responsive:{
+          0:{
+              items:2,
+              margin: 10
+          },
+          577:{
+              items:3,
+              margin: 10
+          },
+          768:{
+              items:4,
+              margin: 10
+          },
+          1200: {
+              items:5
+          }
+      }
+  });
+
+  // shop slider 
+  $('.shop-slider').owlCarousel({
+      margin: 20,
+      items: 5,
+      autoplay: true,
+      loop: true,
+      dots: false,
+      autoplayTimeout: 4000,
+      responsiveClass:true,
+      responsive:{
+          0:{
+              items:2,
+              margin: 10
+          },
+          577:{
+              items:3,
+              margin: 10
+          },
+          768:{
+              items:4,
+              margin: 10
+          },
+          1200: {
+              items:5
+          }
+      }
+  });
+
+  // ecommerce slider 
+  $('.ecommerce-slide').owlCarousel({
+      margin: 20,
+      items: 5,
+      autoplay: true,
+      loop: true,
+      dots: false,
+      autoplayTimeout: 800,
+      responsiveClass:true,
+      responsive:{
+          0:{
+              items:2,
+              margin: 10
+          },
+          577:{
+              items:3,
+              margin: 10
+          },
+          768:{
+              items:4,
+              margin: 10
+          },
+          1200: {
+              items:5
+          }
+      }
+  });
+
+  //tabs
+  $('.tab').on('click', function(evt) {
+    evt.preventDefault();
+    $(this).toggleClass('active');
+    var sel = this.getAttribute('data-toggle-target');
+    $('.tab-content').removeClass('active').filter(sel).addClass('active');
+    
+    $('.info-tab span').removeClass("active");
+    $(this).addClass("active");
+  });
+  
+  //tabs
+  $('.register-tab').on('click', function(evt) {
+    evt.preventDefault();
+    $(this).toggleClass('active');
+    var sel = this.getAttribute('data-toggle-target');
+    $('.register-content').removeClass('active').filter(sel).addClass('active');
+    
+    $('.register-item a').removeClass("active");
+    $(this).addClass("active");
+  });
+
 });
 
 
@@ -38,12 +165,7 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-//sticky header
-window.addEventListener("scroll", function() {
-  const header = document.getElementById("header"),
-        scroll = window.pageYOffset | document.body.scrollTop;
-
-  if (scroll > 300) { header.className = "header-sec sticky"; }
-  else if (scroll <= 300) { header.className = "header-sec"; }
-});
-
+//google translator
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'it'}, 'google_translate_element');
+}
